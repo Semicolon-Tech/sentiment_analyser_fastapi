@@ -80,6 +80,6 @@ def test_predict_all_endpoint_valid_post(client):
     response = client.post('/predict_all', json={
         "text": "it's a beautiful world"
     })
-    assert response.status_code == 20
+    assert response.status_code == 200
     assert response.json()["multinomial"]["tfidf"] in ["positive", "negative"]
     assert isinstance(response.json(), dict)
