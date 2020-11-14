@@ -13,6 +13,8 @@ from sklearn.metrics import accuracy_score
 
 wordnet_lemma = WordNetLemmatizer()
 
+nltk.download("punkt")
+nltk.download("stopwords")
 
 def clean_text(text: str):
     # removing upping case
