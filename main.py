@@ -21,9 +21,9 @@ models = {
         "tfidf": joblib.load("models/bernoulli_naive_bayes_with_tfidf_vectorizer.joblib"),
     },
 
-    "categorical": {
-        "count": joblib.load("models/categorical_naive_bayes_with_count_vectorizer.joblib"),
-    },
+    # "categorical": {
+        # "count": joblib.load("models/categorical_naive_bayes_with_count_vectorizer.joblib"),
+    # },
     "complement": {
         "count": joblib.load("models/complement_naive_bayes_with_count_vectorizer.joblib"),
         "tfidf": joblib.load("models/complement_naive_bayes_with_tfidf_vectorizer.joblib"),
